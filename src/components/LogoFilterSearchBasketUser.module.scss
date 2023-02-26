@@ -1,11 +1,6 @@
 @import "../App.module.scss";
 .main__block {
-  // display: flex;
-  // height: 48px;
-  // gap: 40px;
-  // margin: 20px 0;
-  @apply 
-  flex 
+  @apply flex 
   h-12 
   my-5 
   mx-0
@@ -14,67 +9,25 @@
   gap-5
   840px:gap-10
   840px:justify-start
-  840px:flex-nowrap
-  ;
-  // @media screen and (max-width: 840px) {
-  //   flex-wrap: wrap; 
-  //   justify-content: space-between;
-  //     gap: 20px;
-  // }
-
+  840px:flex-nowrap;
 }
 .logo {
-  // display: flex;
-  // align-items: center;
-  // cursor: pointer;
-  @apply 
-  flex 
+  @apply flex 
   items-center 
   cursor-pointer
-  ;
+  order-1
+  hidden
+  540px:flex
+  840px:order-none;
   img {
     @apply h-12 w-24;
-    // height: 48px;
-    
   }
   .kanzler {
-    @apply h-16 w-24;
+    @apply 840px:h-16 840px:w-24;
   }
-  // &::before {
-  //   content: "";
-  //   display: inline-block;
-  //   background-color: $background-logo-color;
-  //   width: 90px;
-  //   height: 48px;
-  //   // @apply
-  //   // inline-block
-  //   // bg-background-logo-color
-  //   // w-20
-  //   // h-12;
-  // }
-   @media screen and (max-width: 840px) {
-    order: 1;
-  }
-  @media screen and (max-width: 540px) {
-    display: none;
-    }
 }
 .catalog {
-  // font-family: "Inter";
-  // font-size: 13px;
-  // line-height: 16px;
-  // font-weight: 500;
-  // color: $red-text;
-  // background-color: $catalog-button-background;
-  // border-radius: $radius;
-  // padding: 16px 25px;
-  // display: flex;
-  // gap: 7px;
-  // align-items: center;
-  // cursor: pointer;
-  @apply 
-  font-inter 
-  text-sm 
+  @apply text-sm 
   font-medium 
   text-red-text 
   bg-catalog-button-background 
@@ -85,60 +38,70 @@
   gap-2
   items-center
   cursor-pointer
-  ;
-  &::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../assets/catalog.svg");
-    width: 11px;
-    height: 11px;
-  }
-   @media screen and (max-width: 840px) {
-    order: 2;
-    margin-right: auto;
-  }
-
+  order-2
+  mr-auto
+  840px:order-none
+  840px:mr-0;
 }
 .search {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 20px;
-  width: 70%;
-  border-radius: $radius;
-  border: $border;
-  background-color: $search-background;
-  color: $text-color;
+  @apply flex 
+  items-center 
+  gap-2 
+  py-3 
+  px-5 
+  w-full
+  840px:w-3/4 
+  rounded 
+  border
+border-border-grey-color
+bg-search-background
+text-text-color
+  order-4
+  840px:order-none;
   input {
-    background-color: $search-background;
-    border: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.01em;
-    height: 24px;
-    width: 100%;
-    @apply outline-none;
-  }
-   @media screen and (max-width: 840px) {
-    order: 4;
+    @apply outline-none 
+    bg-search-background 
+    border-none
+    font-medium
+    text-sm
+    tracking-widest
+    h-6
+    w-full;
   }
 }
 .buttons {
-  display: flex;
-  gap: 16px;
+  @apply flex
+  gap-4
+  order-3
+  840px:order-none;
   button {
-    cursor: pointer;
-    border-radius: $radius;
-    border: $border;
-    background-color: $search-background;
-    height: 48px;
-    width: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @media screen and (max-width: 840px) {
-    order: 3;
+    @apply 
+    relative
+    cursor-pointer
+    rounded
+    border
+    border-border-grey-color
+    bg-search-background
+    h-12
+    w-12
+    flex
+    items-center
+    justify-center
+    ;
+    .count__of__product {
+      @apply absolute 
+      bg-red-text
+       text-white
+       rounded-full
+       flex
+       items-center
+       justify-center
+       text-xxs
+        h-4
+        w-4
+        bottom-2
+        left-1
+       ;
+    }
   }
 }

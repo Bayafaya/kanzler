@@ -1,4 +1,5 @@
 import style from './App.module.scss'
+import FirstBanner from './components/FirstBanner';
 import Header from './components/Header';
 import LogoFilterSearchBasketUser from './components/LogoFilterSearchBasketUser';
 
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <div className={style.container}>
          <LogoFilterSearchBasketUser/>
+         <FirstBanner />
       </div>
      
     </div>

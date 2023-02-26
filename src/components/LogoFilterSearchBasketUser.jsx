@@ -5,7 +5,7 @@ import search from '../assets/search.svg'
 import basket from '../assets/basket.svg'
 import user from '../assets/user.svg'
 import { ReactComponent as Kanzler } from '../assets/kanzler.svg'
-
+import { ReactComponent as Catalog } from '../assets/catalog.svg'
 function LogoFilterSearchBasketUser() {
  
   return (
@@ -15,6 +15,7 @@ function LogoFilterSearchBasketUser() {
             <img src={logo}alt="logo" />
         </div>
         <div className={style.catalog}>
+          <Catalog/>
           Каталог
         </div>
         <div className={style.search}>
@@ -22,7 +23,7 @@ function LogoFilterSearchBasketUser() {
         <input  type="text" list='products' placeholder='Найти товар'/>
         </div>
         <div className={style.buttons}>
-        <button><img src={basket} alt="basket" /></button>
+        <button><div className={style.count__of__product}>0</div><img src={basket} alt="basket" /></button>
         <button><img src={user} alt="user" /></button>
         </div>
     </div>

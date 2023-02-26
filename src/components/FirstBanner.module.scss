@@ -1,0 +1,47 @@
+.first_banner__block {
+  @apply h-screen-75 flex justify-between items-center;
+  .maim__text_block {
+   @apply flex
+   flex-col
+   gap-12
+   ;
+    h1 {
+      @apply font-PragmaticaCTT 
+        text-6xl
+        tracking-tighter;
+    }
+    p {
+      @apply text-head-txt
+        text-text-color
+        w-80;
+    }
+    div {
+      @apply flex
+      items-center
+      gap-4
+      ;
+    }
+  }
+  .contacts{
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
+    @apply 
+    h-12 
+    w-12
+    flex
+    justify-center
+    items-center
+    self-end
+    ;
+    .phone{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        @apply
+        h-6
+        w-6
+        text-red-text
+        stroke-current
+        fill-current
+        ;
+    }
+  }
+}
