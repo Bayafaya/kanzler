@@ -1,0 +1,67 @@
+@import "../App.module.scss";
+.header {
+  @apply bg-header-background;
+  menu {
+    @apply flex 840px:justify-between justify-end 840px:gap-0 gap-6 items-center py-5 px-0;
+    nav {
+      @apply 840px:block hidden;
+      ul {
+        @apply list-none flex lg:gap-8 gap-4 text-head-txt;
+        li {
+          @apply 
+          cursor-pointer
+           text-text-color 
+           hover:text-red-text
+           active:text-red-text
+           px-0 
+           py-1 
+           transition-colors
+           border-b 
+           border-b-transparent
+           hover:border-b-red-text
+           active:border-b-red-text;
+        }
+      }
+    }
+    .contacts {
+      @apply flex lg:gap-8 840px:gap-2 gap-2;
+      a {
+          @apply 
+          no-underline 
+          text-head-txt
+        text-text-color 
+        hover:text-red-text
+        active:text-red-text
+          px-0 
+          py-1 
+          transition-colors 
+          flex 
+          gap-1  
+          border-b 
+          border-b-transparent
+          hover:border-b-red-text
+          active:border-b-red-text;
+          ;
+        .mail{
+          @apply 
+          transition-colors 
+          fill-transparent 
+          stroke-current;
+        }
+        .phone{
+          @apply 
+          fill-current 
+          transition-colors;
+        }
+      }
+    }
+    .hamburger{
+        @apply 840px:hidden w-6 h-4 flex-col justify-between;
+        div{
+          @apply border-b-2 mb-1 border-b-black;
+        }
+    }
+  }
+
+
+}

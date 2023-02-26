@@ -1,0 +1,24 @@
+$header-background: #F8F8F8;
+$catalog-button-background: #F8F0F0;
+$text-color: #333333;
+$border: 1px solid #E6E6E6;
+$blue-text:#5178DC;
+$red-text: #E11E26;
+$confirm-the-order-background: #EA5A5A;
+$inputs-background: #F6F6FC;
+$shadow: 20px 20px 80px rgba(0, 0, 0, 0.03);
+$radius: 5px;
+$footer-background: #262626;
+$background-logo-color:#5F5F5F;
+$search-background: #F7F7F7;
+body{
+    font-family: 'SF Pro Display';
+    font-weight: 300;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1270px;
+    @media screen and (max-width: 1320px) {
+        width: 90%;
+    }
+}

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'SF Pro Display';
+    font-weight: 500;
+    font-style: normal;
+    src: url('./fonts/sf/SFProDisplay-Medium.eot');
+    src: 
+    url('./fonts/sf/SFProDisplay-Medium.ttf') format('truetype'),
+    url('./fonts/sf/SFProDisplay-Medium.woff2') format('woff2'),
+    url('./fonts/sf/SFProDisplay-Medium.woff') format('woff'),
+    ;
+}
+
+@font-face {
+    font-family:'SF Pro Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('./fonts/sf/SFProDisplay-Bold.eot');
+    src: 
+    url('./fonts/sf/SFProDisplay-Bold.ttf') format('truetype'),
+    url('./fonts/sf/SFProDisplay-Bold.woff2') format('woff2'),
+    url('./fonts/sf/SFProDisplay-Bold.woff') format('woff'),
+    ;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/sf/SFProDisplay-Light.eot');
+    src: url('./fonts/sf/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/sf/SFProDisplay-Light.woff2') format('woff2'),
+        url('./fonts/sf/SFProDisplay-Light.woff') format('woff'),
+        url('./fonts/sf/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PragmaticaCTT';
+    src: url('./fonts/pragmaticaCtt/PragmaticaCTT-Regular.eot');
+    src: url('./fonts/pragmaticaCtt/PragmaticaCTT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/pragmaticaCtt/PragmaticaCTT-Regular.woff2') format('woff2'),
+        url('./fonts/pragmaticaCtt/PragmaticaCTT-Regular.woff') format('woff'),
+        url('./fonts/pragmaticaCtt/PragmaticaCTT-Regular.ttf') format('truetype'),
+        url('./fonts/pragmaticaCtt/PragmaticaCTT-Regular.svg#PragmaticaCTT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'PragmaticaCTT';
+    src: url('PragmaticaCTT-Regular.eot');
+    src: url('PragmaticaCTT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PragmaticaCTT-Regular.woff2') format('woff2'),
+        url('PragmaticaCTT-Regular.woff') format('woff'),
+        url('PragmaticaCTT-Regular.ttf') format('truetype'),
+        url('PragmaticaCTT-Regular.svg#PragmaticaCTT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
